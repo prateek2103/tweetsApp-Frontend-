@@ -10,6 +10,7 @@ const tweets = axios.create({
 
 //login user
 export const loginUser = async (username, password) => {
+  console.log(tweets);
   const response = await tweets.post("/login", {
     username: username,
     password: password,
